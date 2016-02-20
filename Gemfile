@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Project specific gems
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'high_voltage', '~> 2.4.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
