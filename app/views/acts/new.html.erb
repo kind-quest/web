@@ -1,3 +1,8 @@
+<div class="headerBar">Kind Quest
+<%= link_to("/users/edit") do%>
+<label class="glyphicon glyphicon-chevron-right chevronPadding"></label>
+<%end%>
+</div>
 <div class='container-fluid'>
    <div class='row'>
      <%= form_for @act, url: {action: "create"} do |f| %>
