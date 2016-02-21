@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Project specific gems
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
+gem 'aws-sdk', '~> 2.2', '>= 2.2.18'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'font-awesome-sass', '~> 4.5'
 gem 'factory_girl_rails', '~> 4.6'
