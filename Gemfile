@@ -25,7 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Project specific gems
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-gem 'high_voltage', '~> 2.4.0'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 

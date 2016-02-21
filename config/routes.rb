@@ -2,8 +2,10 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  resources :acts, only: [:index, :new, :create]
+
   authenticated :user do
-    root to: 'pages#show', id: 'home', as: :authenticated_root
+    root to: 'acts#index', as: :authenticated_root
   end
 
   devise_scope :user do
