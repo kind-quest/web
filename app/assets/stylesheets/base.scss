@@ -7,11 +7,45 @@
 body, html {
     height: 100%;
     background-repeat: no-repeat;
-   
-        background-color: rgb(255,117,101);
-        color:rgb(13,55,53);
+
+    color:rgb(13,55,53);
+}
+.container-fluid{
+        height: 100%;
+}
+.signupPage {
+    background-color: rgb(124,152,152);
+    color:rgb(13,55,53);
 }
 
+.profilePage {
+   
+    background-color:white;
+    color:rgb(13,55,53);
+}
+
+.headerBar {
+    background-color: rgb(13,55,53);
+    color: #ffffff;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 1px;
+    
+    font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.chevronPadding {
+    float:right;
+    color:white;
+}
 .text {
 	color:rgb(13,55,53);
 }
@@ -31,6 +65,7 @@ body, html {
 
 .align {
 	text-align:center;
+     font-size:20px;
 }
 .card-container.card {
     max-width: 350px;
@@ -135,7 +170,8 @@ body, html {
     /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
     padding: 0px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 20px;
+    font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
     height: 36px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
