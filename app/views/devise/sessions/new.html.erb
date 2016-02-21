@@ -1,36 +1,37 @@
-<h2></h2>
 
-<div class="container-fluid">
-        <div class="card-container">
 
-<%= image_tag "KindQuestLogo.png", id:"profile-img", class:"profile-img-card"%>
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  
-  <div class="row margin text" >
-  <div class="padding field col-xs-10" >
-    
-    <%= f.email_field :email, autofocus: true ,:placeholder => "Email address", class:"form-control"%>
-  </div>
+<div class="container-fluid signupPage">
+  <div class="card-container">
 
-  <div class="padding field col-xs-10" >
-    
-    <%= f.password_field :password, autocomplete: "off",:placeholder => "Password", class:"form-control" %>
-  </div>
+    <%= image_tag "KindQuestLogo.png", id:"profile-img", class:"profile-img-card"%>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="padding field col-xs-10" >
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+    <div class="row margin text" >
+      <div class="padding field col-xs-10" >
+
+        <%= f.email_field :email, autofocus: true ,:placeholder => "Email address", class:"form-control"%>
+      </div>
+
+      <div class="padding field col-xs-10" >
+
+        <%= f.password_field :password, autocomplete: "off",:placeholder => "Password", class:"form-control" %>
+      </div>
+
+      <% if devise_mapping.rememberable? -%>
+      <div class="padding field col-xs-10" >
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
+      </div>
+      <% end -%>
+
+      <div class="padding actions col-xs-10">
+        <%= f.submit "Log in",class:"btn btn-lg btn-primary btn-block btn-signin" %>
+      </div>
     </div>
-  <% end -%>
-
-  <div class="padding actions col-xs-10">
-    <%= f.submit "Log in",class:"btn btn-lg btn-primary btn-block btn-signin" %>
   </div>
-  </div>
-  </div>
-  </div>
+  <div class="align">
+  <%= render "devise/shared/links" %></div>
+</div>
 <% end %>
 
-<div class="align">
-<%= render "devise/shared/links" %></div>
+
