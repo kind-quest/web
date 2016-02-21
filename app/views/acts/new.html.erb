@@ -3,6 +3,7 @@
      <%= form_for @act, url: {action: "create"} do |f| %>
       <%= f.text_area 'description' %>
       <%= f.file_field 'picture', accept: "image/*" %>
+      <%= f.submit "Share Act" %>
     <% end %>
    </div>
 </div>

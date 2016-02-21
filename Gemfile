@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
 gem 'devise', '~> 3.5', '>= 3.5.6'
-gem "font-awesome-rails"
+gem 'font-awesome-sass', '~> 4.5'
 
 group :production do
   # Required by heroku for better logging n' stuff
