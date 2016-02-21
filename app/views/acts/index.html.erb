@@ -1,1 +1,5 @@
-acts index
+<% if @acts.present? %>
+  <%= render partial: 'act', collection: @acts %>
+<% else %>
+  We are out of stuff to show
+<% end %>
