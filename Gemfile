@@ -30,7 +30,11 @@ gem 'paperclip', '~> 4.3', '>= 4.3.5'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 
 group :production do
+  # Required by heroku for better logging n' stuff
   gem 'rails_12factor'
+
+  # Production Web server
+  gem 'puma', '~> 2.16'
 end
 
 group :development, :test do
