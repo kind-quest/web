@@ -30,6 +30,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.5'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem "font-awesome-rails"
 gem 'factory_girl_rails', '~> 4.6'
+gem 'faker', '~> 1.6', '>= 1.6.2'
 
 group :production do
   # Required by heroku for better logging n' stuff
