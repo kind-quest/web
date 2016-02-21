@@ -14,7 +14,8 @@ body, html {
         height: 100%;
 }
 .signupPage {
-    background-color: rgb(124,152,152);
+   background-color: rgb(124,152,152);
+    /*background: linear-gradient(rgb(90,213,202), rgb(255,255,255));*/
     color:rgb(13,55,53);
 }
 
@@ -29,7 +30,7 @@ body, html {
     color: #ffffff;
     padding-top: 15px;
     padding-right: 15px;
-    padding-bottom: 15px;
+   
     padding-left: 15px;
     margin-bottom: 20px;
     border-top-color: transparent;
@@ -40,6 +41,41 @@ body, html {
     font-size: 24px;
     font-style: normal;
     font-variant: normal;
+}
+
+
+.footer {
+background-color: rgb(13,55,53);
+     background-color: rgb(13,55,53);
+    color: #ffffff;
+    padding-top: 15px;
+    padding-right: 15px;
+  
+    padding-left: 15px;
+   
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 1px;
+    
+    font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.plusPadding {
+    float:right;
+    color:white;
+}
+
+.hambergPadding {
+    float:left;
+    color:white;    
 }
 
 .chevronPadding {
