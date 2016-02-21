@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :acts, only: [:index, :new, :create]
+  resources :likes, only: [:create], defaults: { format: :json }
 
   authenticated :user do
     root to: 'acts#index', as: :authenticated_root
