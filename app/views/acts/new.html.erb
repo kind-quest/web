@@ -2,7 +2,7 @@
    <div class='row'>
      <%= form_for @act, multipart: true, url: {action: "create"} do |f| %>
       <%= f.text_area 'description' %>
-      <%= f.file_field 'picture', accept: "image/*" %>
+      <%= f.file_field 'image', accept: "image/*" %>
       <%= f.submit "Share Act" %>
     <% end %>
    </div>
