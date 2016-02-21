@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+
+  devise_for :users
+
+  resources :acts, only: [:index, :new, :create]
+
+  authenticated :user do
+    root to: 'acts#index', as: :authenticated_root
+  end
+
+  devise_scope :user do
+    unauthenticated :user do
+      root :to => 'devise/sessions#new', as: :unauthenticated_root
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
