@@ -1,1 +1,9 @@
-acts index
+<% if @acts.present? %>
+  <div class="acts-container">
+    <%= render partial: 'acts', object: @acts %>
+  </div>
+
+  <div class="scroll-status"></div>
+<% else %>
+  We are out of stuff to show
+<% end %>

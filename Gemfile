@@ -29,6 +29,9 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'font-awesome-sass', '~> 4.5'
+gem 'factory_girl_rails', '~> 4.6'
+gem 'faker', '~> 1.6', '>= 1.6.2'
+gem 'jquery-infinite-pages', '~> 0.2.0'
 
 group :production do
   # Required by heroku for better logging n' stuff
@@ -41,6 +44,7 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
@@ -50,4 +54,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
