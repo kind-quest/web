@@ -1,0 +1,19 @@
+// Append new data
+$("<%=j render(partial: 'acts', object: @acts) %>")
+.appendTo($(".acts-container"));
+
+console.log('asdfsadfadsasdfasdf')
+
+// Update pagination link
+<% if @acts.empty? %>
+  window.Acts = window.Acts || {};
+  window.Acts.isEmpty = true;
+
+  $('.scroll-status').html("That's all, folks!");
+<% else %>
+  window.Acts = window.Acts || {};
+  window.Acts.isEmpty = false;
+
+  $('.scroll-status')
+    .html("<%=j link_to('Next Page', acts_path, remote: true) %>");
+<% end %>
